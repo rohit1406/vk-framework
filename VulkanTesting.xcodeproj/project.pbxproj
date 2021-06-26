@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1848EB4626530EFA005DC172 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1848EB4526530EFA005DC172 /* main.cpp */; };
+		1848EB5B2653179B005DC172 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1848EB5A2653179B005DC172 /* libglfw.3.3.dylib */; };
+		1848EB5F265317DD005DC172 /* libvulkan.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1848EB5D265317DD005DC172 /* libvulkan.1.dylib */; };
+		1848EB60265317DD005DC172 /* libvulkan.1.2.176.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1848EB5E265317DD005DC172 /* libvulkan.1.2.176.dylib */; };
+		1848EB612653181B005DC172 /* libvulkan.1.2.176.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1848EB5E265317DD005DC172 /* libvulkan.1.2.176.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1848EB622653181B005DC172 /* libvulkan.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1848EB5D265317DD005DC172 /* libvulkan.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1848EB632653181B005DC172 /* libglfw.3.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1848EB5A2653179B005DC172 /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1848EB6F26544ED6005DC172 /* VulkanRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1848EB6D26544ED6005DC172 /* VulkanRenderer.cpp */; };
+		1848EB79265A8EEB005DC172 /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1848EB77265A8EEB005DC172 /* Mesh.cpp */; };
+		1877B5A726603BAB0008F510 /* MeshModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1877B5A526603BAB0008F510 /* MeshModel.cpp */; };
+		1877B5AD26614C480008F510 /* libassimp.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1877B5AA26614C480008F510 /* libassimp.5.dylib */; };
+		1877B5AE26614C480008F510 /* libassimp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1877B5AB26614C480008F510 /* libassimp.dylib */; };
+		1877B5AF26614C480008F510 /* libassimp.5.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1877B5AC26614C480008F510 /* libassimp.5.0.0.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1848EB4026530EFA005DC172 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1848EB632653181B005DC172 /* libglfw.3.3.dylib in CopyFiles */,
+				1848EB622653181B005DC172 /* libvulkan.1.dylib in CopyFiles */,
+				1848EB612653181B005DC172 /* libvulkan.1.2.176.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1848EB4226530EFA005DC172 /* VulkanTesting */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VulkanTesting; sourceTree = BUILT_PRODUCTS_DIR; };
+		1848EB4526530EFA005DC172 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1848EB5A2653179B005DC172 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../../usr/local/Cellar/glfw/3.3.4/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		1848EB5D265317DD005DC172 /* libvulkan.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvulkan.1.dylib; path = ../../../../../VulkanSDK/1.2.176.1/macOS/lib/libvulkan.1.dylib; sourceTree = "<group>"; };
+		1848EB5E265317DD005DC172 /* libvulkan.1.2.176.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvulkan.1.2.176.dylib; path = ../../../../../VulkanSDK/1.2.176.1/macOS/lib/libvulkan.1.2.176.dylib; sourceTree = "<group>"; };
+		1848EB6D26544ED6005DC172 /* VulkanRenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VulkanRenderer.cpp; sourceTree = "<group>"; };
+		1848EB6E26544ED6005DC172 /* VulkanRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VulkanRenderer.hpp; sourceTree = "<group>"; };
+		1848EB702655ABDC005DC172 /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		1848EB7226593BC9005DC172 /* shader.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vert; sourceTree = "<group>"; };
+		1848EB7326593C24005DC172 /* shader.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.frag; sourceTree = "<group>"; };
+		1848EB74265941A0005DC172 /* compile_shader.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = compile_shader.sh; sourceTree = "<group>"; };
+		1848EB75265A48FF005DC172 /* vert.spv */ = {isa = PBXFileReference; lastKnownFileType = file; path = vert.spv; sourceTree = "<group>"; };
+		1848EB76265A48FF005DC172 /* frag.spv */ = {isa = PBXFileReference; lastKnownFileType = file; path = frag.spv; sourceTree = "<group>"; };
+		1848EB77265A8EEB005DC172 /* Mesh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Mesh.cpp; sourceTree = "<group>"; };
+		1848EB78265A8EEB005DC172 /* Mesh.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Mesh.hpp; sourceTree = "<group>"; };
+		1848EB7A265DACE8005DC172 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		1877B5A3265EAE380008F510 /* Giraffe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Giraffe.jpg; sourceTree = "<group>"; };
+		1877B5A426602A830008F510 /* Bakri.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bakri.jpg; sourceTree = "<group>"; };
+		1877B5A526603BAB0008F510 /* MeshModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MeshModel.cpp; sourceTree = "<group>"; };
+		1877B5A626603BAB0008F510 /* MeshModel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MeshModel.hpp; sourceTree = "<group>"; };
+		1877B5A926611E930008F510 /* helecopter */ = {isa = PBXFileReference; lastKnownFileType = folder; name = helecopter; path = ../../../prerequisite/helecopter; sourceTree = "<group>"; };
+		1877B5AA26614C480008F510 /* libassimp.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.5.dylib; path = ../../../../../../../usr/local/lib/libassimp.5.dylib; sourceTree = "<group>"; };
+		1877B5AB26614C480008F510 /* libassimp.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.dylib; path = ../../../../../../../usr/local/lib/libassimp.dylib; sourceTree = "<group>"; };
+		1877B5AC26614C480008F510 /* libassimp.5.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.5.0.0.dylib; path = ../../../../../../../usr/local/lib/libassimp.5.0.0.dylib; sourceTree = "<group>"; };
+		1877B5C02661613E0008F510 /* Helicopter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Helicopter.png; sourceTree = "<group>"; };
+		1877B5C12661613E0008F510 /* Screenshot (383).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot (383).png"; sourceTree = "<group>"; };
+		1877B5C22661613E0008F510 /* Screenshot (382).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot (382).png"; sourceTree = "<group>"; };
+		1877B5C32661613E0008F510 /* Screenshot (378).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot (378).png"; sourceTree = "<group>"; };
+		1877B5C42661613E0008F510 /* Screenshot (387).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot (387).png"; sourceTree = "<group>"; };
+		1877B5C52661613E0008F510 /* Screenshot (386).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot (386).png"; sourceTree = "<group>"; };
+		1877B5C62661613E0008F510 /* Screenshot (381).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot (381).png"; sourceTree = "<group>"; };
+		1877B5C72661613E0008F510 /* Screenshot (385).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot (385).png"; sourceTree = "<group>"; };
+		1877B5C82661613E0008F510 /* ec1351.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ec1351.bmp; sourceTree = "<group>"; };
+		1877B5C92661613E0008F510 /* Helicopter2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Helicopter2.png; sourceTree = "<group>"; };
+		1877B5CA2661613E0008F510 /* Screenshot (377).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot (377).png"; sourceTree = "<group>"; };
+		1877B5CB2661613F0008F510 /* Screenshot (379).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot (379).png"; sourceTree = "<group>"; };
+		1877B5CC2661613F0008F510 /* Screenshot (380).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot (380).png"; sourceTree = "<group>"; };
+		1877B5CD2661613F0008F510 /* ec135.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ec135.bmp; sourceTree = "<group>"; };
+		1877B5CE2661613F0008F510 /* Screenshot (384).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot (384).png"; sourceTree = "<group>"; };
+		1877B5CF2661613F0008F510 /* Helecopter.fbx */ = {isa = PBXFileReference; lastKnownFileType = file; path = Helecopter.fbx; sourceTree = "<group>"; };
+		1877B5D0266164D40008F510 /* plain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plain.png; sourceTree = "<group>"; };
+		1877B5D1266223140008F510 /* second.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = second.vert; sourceTree = "<group>"; };
+		1877B5D2266223240008F510 /* second.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = second.frag; sourceTree = "<group>"; };
+		1877B5D32662267B0008F510 /* second_frag.spv */ = {isa = PBXFileReference; lastKnownFileType = file; path = second_frag.spv; sourceTree = "<group>"; };
+		1877B5D42662267B0008F510 /* second_vert.spv */ = {isa = PBXFileReference; lastKnownFileType = file; path = second_vert.spv; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1848EB3F26530EFA005DC172 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1877B5AE26614C480008F510 /* libassimp.dylib in Frameworks */,
+				1848EB5B2653179B005DC172 /* libglfw.3.3.dylib in Frameworks */,
+				1877B5AF26614C480008F510 /* libassimp.5.0.0.dylib in Frameworks */,
+				1848EB5F265317DD005DC172 /* libvulkan.1.dylib in Frameworks */,
+				1877B5AD26614C480008F510 /* libassimp.5.dylib in Frameworks */,
+				1848EB60265317DD005DC172 /* libvulkan.1.2.176.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1848EB3926530EFA005DC172 = {
+			isa = PBXGroup;
+			children = (
+				1877B5A826611E5A0008F510 /* Models */,
+				1877B5A2265EAE1B0008F510 /* Textures */,
+				1848EB7126593B68005DC172 /* Shaders */,
+				1848EB4426530EFA005DC172 /* VulkanTesting */,
+				1848EB4326530EFA005DC172 /* Products */,
+				1848EB592653179B005DC172 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1848EB4326530EFA005DC172 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1848EB4226530EFA005DC172 /* VulkanTesting */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1848EB4426530EFA005DC172 /* VulkanTesting */ = {
+			isa = PBXGroup;
+			children = (
+				1848EB7A265DACE8005DC172 /* stb_image.h */,
+				1848EB4526530EFA005DC172 /* main.cpp */,
+				1848EB6D26544ED6005DC172 /* VulkanRenderer.cpp */,
+				1848EB6E26544ED6005DC172 /* VulkanRenderer.hpp */,
+				1848EB702655ABDC005DC172 /* Utilities.h */,
+				1848EB77265A8EEB005DC172 /* Mesh.cpp */,
+				1848EB78265A8EEB005DC172 /* Mesh.hpp */,
+				1877B5A526603BAB0008F510 /* MeshModel.cpp */,
+				1877B5A626603BAB0008F510 /* MeshModel.hpp */,
+			);
+			path = VulkanTesting;
+			sourceTree = "<group>";
+		};
+		1848EB592653179B005DC172 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1848EB5E265317DD005DC172 /* libvulkan.1.2.176.dylib */,
+				1848EB5D265317DD005DC172 /* libvulkan.1.dylib */,
+				1848EB5A2653179B005DC172 /* libglfw.3.3.dylib */,
+				1877B5AC26614C480008F510 /* libassimp.5.0.0.dylib */,
+				1877B5AA26614C480008F510 /* libassimp.5.dylib */,
+				1877B5AB26614C480008F510 /* libassimp.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1848EB7126593B68005DC172 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				1877B5D32662267B0008F510 /* second_frag.spv */,
+				1877B5D42662267B0008F510 /* second_vert.spv */,
+				1848EB76265A48FF005DC172 /* frag.spv */,
+				1848EB75265A48FF005DC172 /* vert.spv */,
+				1848EB7226593BC9005DC172 /* shader.vert */,
+				1848EB7326593C24005DC172 /* shader.frag */,
+				1848EB74265941A0005DC172 /* compile_shader.sh */,
+				1877B5D1266223140008F510 /* second.vert */,
+				1877B5D2266223240008F510 /* second.frag */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		1877B5A2265EAE1B0008F510 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				1877B5D0266164D40008F510 /* plain.png */,
+				1877B5CD2661613F0008F510 /* ec135.bmp */,
+				1877B5C82661613E0008F510 /* ec1351.bmp */,
+				1877B5CF2661613F0008F510 /* Helecopter.fbx */,
+				1877B5C02661613E0008F510 /* Helicopter.png */,
+				1877B5C92661613E0008F510 /* Helicopter2.png */,
+				1877B5CA2661613E0008F510 /* Screenshot (377).png */,
+				1877B5C32661613E0008F510 /* Screenshot (378).png */,
+				1877B5CB2661613F0008F510 /* Screenshot (379).png */,
+				1877B5CC2661613F0008F510 /* Screenshot (380).png */,
+				1877B5C62661613E0008F510 /* Screenshot (381).png */,
+				1877B5C22661613E0008F510 /* Screenshot (382).png */,
+				1877B5C12661613E0008F510 /* Screenshot (383).png */,
+				1877B5CE2661613F0008F510 /* Screenshot (384).png */,
+				1877B5C72661613E0008F510 /* Screenshot (385).png */,
+				1877B5C52661613E0008F510 /* Screenshot (386).png */,
+				1877B5C42661613E0008F510 /* Screenshot (387).png */,
+				1877B5A426602A830008F510 /* Bakri.jpg */,
+				1877B5A3265EAE380008F510 /* Giraffe.jpg */,
+			);
+			path = Textures;
+			sourceTree = "<group>";
+		};
+		1877B5A826611E5A0008F510 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1877B5A926611E930008F510 /* helecopter */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1848EB4126530EFA005DC172 /* VulkanTesting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1848EB4926530EFA005DC172 /* Build configuration list for PBXNativeTarget "VulkanTesting" */;
+			buildPhases = (
+				1848EB3E26530EFA005DC172 /* Sources */,
+				1848EB3F26530EFA005DC172 /* Frameworks */,
+				1848EB4026530EFA005DC172 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VulkanTesting;
+			productName = VulkanTesting;
+			productReference = 1848EB4226530EFA005DC172 /* VulkanTesting */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1848EB3A26530EFA005DC172 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					1848EB4126530EFA005DC172 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 1848EB3D26530EFA005DC172 /* Build configuration list for PBXProject "VulkanTesting" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1848EB3926530EFA005DC172;
+			productRefGroup = 1848EB4326530EFA005DC172 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1848EB4126530EFA005DC172 /* VulkanTesting */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1848EB3E26530EFA005DC172 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1877B5A726603BAB0008F510 /* MeshModel.cpp in Sources */,
+				1848EB79265A8EEB005DC172 /* Mesh.cpp in Sources */,
+				1848EB4626530EFA005DC172 /* main.cpp in Sources */,
+				1848EB6F26544ED6005DC172 /* VulkanRenderer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1848EB4726530EFA005DC172 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/glfw/3.3.4/include,
+					/usr/local/include,
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = "";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1848EB4826530EFA005DC172 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				"HEADER_SEARCH_PATHS[arch=*]" = "";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1848EB4A26530EFA005DC172 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/glfw/3.3.4/include,
+					/usr/local/include,
+					/usr/local/Cellar/glm/0.9.9.8/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/glfw/3.3.4/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1848EB4B26530EFA005DC172 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.3.4/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1848EB3D26530EFA005DC172 /* Build configuration list for PBXProject "VulkanTesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1848EB4726530EFA005DC172 /* Debug */,
+				1848EB4826530EFA005DC172 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1848EB4926530EFA005DC172 /* Build configuration list for PBXNativeTarget "VulkanTesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1848EB4A26530EFA005DC172 /* Debug */,
+				1848EB4B26530EFA005DC172 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1848EB3A26530EFA005DC172 /* Project object */;
+}
